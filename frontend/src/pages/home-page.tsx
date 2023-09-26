@@ -4,16 +4,15 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { LoadingScreen } from "@/components/loading-screen";
 
 const HomePage = () => {
-  const { isLoading, loginWithPopup } = useAuth0();
+  const { isLoading, loginWithPopup, loginWithRedirect } = useAuth0();
   const [_location, setLocation] = useLocation();
   if (isLoading) {
     return <LoadingScreen />;
   }
 
   const handleOnClick = async () => {
-    try  {
-      await loginWithPopup();
-      setLocation("/initial");
+    try {
+      await loginWithRedirect();
     } catch (error) {
       console.error(error);
     }

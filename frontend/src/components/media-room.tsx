@@ -48,15 +48,17 @@ export const MediaRoom = ({ chatId, video, audio }: MediaRoomProps) => {
   }
 
   return (
-    <LiveKitRoom
-      data-lk-theme="default"
-      serverUrl={import.meta.env.VITE_LIVEKIT_URL}
-      token={token}
-      connect={true}
-      video={video}
-      audio={audio}
-    >
-      <VideoConference />
-    </LiveKitRoom>
+    <div className="h-full overflow-hidden">
+      <LiveKitRoom
+        data-lk-theme="default"
+        serverUrl={import.meta.env.VITE_LIVEKIT_URL}
+        token={token}
+        connect={true}
+        video={video}
+        audio={audio}
+      >
+        <VideoConference />
+      </LiveKitRoom>
+    </div>
   );
 };

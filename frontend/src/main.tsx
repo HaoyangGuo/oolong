@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       domain={"oolong.us.auth0.com"}
       clientId={"GdxxxVdZeQAhaGziPXWLjuMnLn1oUaC1"}
       authorizationParams={{
-        redirect_uri: window.location.origin,
+        redirect_uri: window.location.origin + "/initial",
         audience: "https://oolong-api.dhguo.dev",
         scope: "openid profile email",
       }}
