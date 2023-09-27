@@ -20,11 +20,26 @@ const PageFallBackRender = ({
         resetErrorBoundary();
         return <Redirect to="/initial" />;
       case 401:
+        toast({
+          title: "Unauthorized",
+          description: "You are not authorized to perform this action",
+        })
+        resetErrorBoundary();
         return <Redirect to="/initial" />;
       case 404:
+        toast({
+          title: "Not Found",
+          description: "The resource you are looking for does not exist",
+        });
+        resetErrorBoundary();
         return <Redirect to="/404" />;
       case 500:
       default:
+        toast({
+          title: "Internal Server Error",
+          description: "Something went wrong. Please try again later",
+        });
+        resetErrorBoundary();
         return <Redirect to="/" />;
     }
   } else {
