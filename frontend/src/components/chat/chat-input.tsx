@@ -5,19 +5,14 @@ import { Input } from "@/components/ui/input";
 import * as z from "zod";
 import {
   Plus,
-  Send,
   SendHorizonal,
-  SendHorizonalIcon,
-  Smile,
   X,
-  icons,
 } from "lucide-react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useToast } from "@/components/ui/use-toast";
 import { KeyboardEventHandler, useEffect, useRef, useState } from "react";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
-import React from "react";
 import { EmojiPicker } from "../emoji-picker";
 
 interface ChatInputProps {
@@ -102,9 +97,7 @@ export const ChatInput = ({ query, name, type }: ChatInputProps) => {
         content: "",
         image: "",
       });
-      // @ts-ignore
       if ((document.getElementById("imageInput") as HTMLInputElement).value) {
-        // @ts-ignore
         (document.getElementById("imageInput") as HTMLInputElement).value = "";
       }
       if (textareaRef.current) {
@@ -164,9 +157,7 @@ export const ChatInput = ({ query, name, type }: ChatInputProps) => {
   };
 
   const handleDeleteImage = () => {
-    // @ts-ignore
     if ((document.getElementById("imageInput") as HTMLInputElement).value) {
-      // @ts-ignore
       (document.getElementById("imageInput") as HTMLInputElement).value = "";
     }
     setImagePreview(null);

@@ -1,15 +1,11 @@
 import { Route, Switch, useLocation } from "wouter";
 import {
-  QueryClient,
-  QueryClientProvider,
   useQuery,
 } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { HomePage } from "./pages/home-page";
 import { InitialPage } from "./pages/initial-page";
 import { NotFoundPage } from "./pages/not-found-page";
 import { ModalProvider } from "./components/providers/modal-provider";
-import { ThemeProvider } from "./components/providers/theme-provider";
 import { Toaster } from "./components/ui/toaster";
 import { ErrorBoundary } from "react-error-boundary";
 import { PageFallBackRender } from "./components/page-fallback-renderer";
@@ -32,7 +28,7 @@ const App = () => {
 
   const {
     data: _accessToken,
-    isLoading: accessTokenIsLoading,
+    isLoading: _accessTokenIsLoading,
     isFetching: accessTokenIsFetching,
   } = useQuery({
     queryKey: ["accessToken"],

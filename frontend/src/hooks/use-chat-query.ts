@@ -1,7 +1,7 @@
 import { useInfiniteQuery, useQueryClient } from "@tanstack/react-query";
 import { useSocket } from "@/components/providers/socket-provider";
 import { ApiError } from "@/utils";
-import { DirectMessage, MessageWithMemberWithProfile } from "@/models";
+import { MessageWithMemberWithProfile } from "@/models";
 
 interface ChatQueryParams {
   queryKey: string;

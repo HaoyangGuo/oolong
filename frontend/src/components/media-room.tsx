@@ -3,8 +3,6 @@ import { LiveKitRoom, VideoConference } from "@livekit/components-react";
 import "@livekit/components-styles";
 import { useQueryClient } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
-import { useAuth0 } from "@auth0/auth0-react";
-import { Profile } from "@/models";
 
 interface MediaRoomProps {
   chatId: string;

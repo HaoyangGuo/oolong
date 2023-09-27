@@ -3,7 +3,6 @@ import {
   MemberRole,
   ServerWithChannelsWithMembersWithProfiles,
 } from "@/models";
-import React from "react";
 import { ActionTooltip } from "@/components/action-tooltip";
 import { Plus, Settings } from "lucide-react";
 import { useModalStore } from "@/hooks/use-modal-store";

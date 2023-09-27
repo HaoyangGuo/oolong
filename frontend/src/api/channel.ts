@@ -1,4 +1,4 @@
-import { Channel } from "@/models";
+import { Channel, ChannelType } from "@/models";
 import { ApiError } from "@/utils";
 
 const API_URL = import.meta.env.VITE_API_URL;
@@ -30,7 +30,7 @@ export const createChannel = async (
   accessToken: string,
   serverId: string,
   name: string,
-  type: any
+  type: ChannelType
 ) => {
   const res = await fetch(
     `${API_URL}/channels/${serverId}`,

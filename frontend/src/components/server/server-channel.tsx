@@ -2,7 +2,6 @@ import {
   Channel,
   ChannelType,
   MemberRole,
-  Server,
   ServerWithChannelsWithMembersWithProfiles,
 } from "@/models";
 import {

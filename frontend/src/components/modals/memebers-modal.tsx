@@ -90,7 +90,7 @@ const MembersModal = () => {
 
   const {
     mutateAsync: updateMemberRoleMutation,
-    isLoading: updateMemberRoleLoading,
+    isLoading: _updateMemberRoleLoading,
   } = useMutation({
     mutationFn: async ({
       serverId,
@@ -111,7 +111,7 @@ const MembersModal = () => {
     onError: handleMutationError,
   });
 
-  const { mutateAsync: kickMemberMutation, isLoading: kickMemberLoading } =
+  const { mutateAsync: kickMemberMutation, isLoading: _kickMemberLoading } =
     useMutation({
       mutationFn: async ({
         serverId,

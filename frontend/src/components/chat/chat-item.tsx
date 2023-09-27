@@ -35,7 +35,7 @@ export const ChatItem = ({
   imageUrl,
   deleted,
   currentMember,
-  isUpdated,
+  isUpdated: _isUpdated,
   socketQuery,
   type,
 }: ChatItemProps) => {

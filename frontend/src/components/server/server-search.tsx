@@ -9,7 +9,6 @@ import {
   CommandList,
 } from "@/components/ui/command";
 import { useLocation, useRoute } from "wouter";
-import { set } from "react-hook-form";
 
 interface ServerSearchProps {
   data: {
@@ -21,7 +20,7 @@ interface ServerSearchProps {
 
 function ServerSearch({ data }: ServerSearchProps) {
   const [open, setOpen] = React.useState(false);
-  const [location, setLocation] = useLocation();
+  const [_location, setLocation] = useLocation();
   const [_match, params] = useRoute("/servers/:serverId/:any*");
 
   React.useEffect(() => {

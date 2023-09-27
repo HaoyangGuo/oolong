@@ -81,7 +81,7 @@ const InviteModal = () => {
 
   const onNew = async () => {
     const server = await updateInviteCodeMutation();
-    onOpen("invite", { server: server });
+    onOpen("invite", { server: server as any });
   };
 
   const isModalOpen = isOpen && type === "invite";

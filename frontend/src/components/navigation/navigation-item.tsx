@@ -1,6 +1,6 @@
 import { ActionTooltip } from "@/components/action-tooltip";
 import { cn } from "@/lib/utils";
-import { useRoute, Redirect, useLocation } from "wouter";
+import { useRoute, useLocation } from "wouter";
 
 interface NavigationItemProps {
   id: string;

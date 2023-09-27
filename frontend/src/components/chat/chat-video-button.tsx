@@ -1,15 +1,8 @@
-import { useLocation, useRoute } from "wouter";
 import { Video, VideoOff } from "lucide-react";
 import { ActionTooltip } from "@/components/action-tooltip";
-import { useEffect, useState } from "react";
-import { useQueryClient } from "@tanstack/react-query";
 import { useChatVideo } from "@/hooks/use-chat-video";
 
 export const ChatVideoButton = () => {
-  const queryClient = useQueryClient();
-  const [_match, params] = useRoute(
-    "/servers/:serverId/conversations/:memberId"
-  );
   const { isVideoOpen, toggleVideo } = useChatVideo();
 
   const handleOnClick = () => {

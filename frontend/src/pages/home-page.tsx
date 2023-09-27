@@ -1,11 +1,9 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import { Redirect, useLocation } from "wouter";
 import { ModeToggle } from "@/components/mode-toggle";
 import { LoadingScreen } from "@/components/loading-screen";
 
 const HomePage = () => {
-  const { isLoading, loginWithPopup, loginWithRedirect } = useAuth0();
-  const [_location, setLocation] = useLocation();
+  const { isLoading, loginWithRedirect } = useAuth0();
   if (isLoading) {
     return <LoadingScreen />;
   }

@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { io } from "socket.io-client";
 import { useQueryClient } from "@tanstack/react-query";
-import { useAuth0 } from "@auth0/auth0-react";
 
 type SocketContextType = {
   socket: any | null;

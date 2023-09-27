@@ -163,6 +163,7 @@ const InitialModal = ({ accessToken }: { accessToken: string }) => {
                   className="bg-zinc-300/50 border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
                   disabled={isLoading}
                   onChange={handleImageChange}
+                  accept={ACCEPTED_IMAGE_TYPES.join(",")}
                 />
               </div>
               {imagePreview && (

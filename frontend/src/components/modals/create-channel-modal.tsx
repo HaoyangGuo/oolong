@@ -1,4 +1,4 @@
-import { createChannel, createServer } from "@/api";
+import { createChannel } from "@/api";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,

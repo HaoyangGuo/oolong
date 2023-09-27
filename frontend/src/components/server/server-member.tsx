@@ -48,6 +48,7 @@ export const ServerMember = ({ member, server }: ServerMemberProps) => {
       >
         {member.profile.username}
       </p>
+      {icon}
     </button>
   );
 };

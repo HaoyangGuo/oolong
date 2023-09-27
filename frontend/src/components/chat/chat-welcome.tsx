@@ -1,5 +1,4 @@
 import { Hash } from "lucide-react";
-import React from "react";
 
 interface ChatWelcomeProps {
   name: string;

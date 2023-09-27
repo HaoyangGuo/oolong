@@ -7,16 +7,12 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
-import { Check, Copy, RefreshCw } from "lucide-react";
 import { deleteServer } from "@/api";
 import { useQueryClient } from "@tanstack/react-query";
 import { useModalStore } from "@/hooks/use-modal-store";
 import { useMutation } from "@tanstack/react-query";
 import { useToast } from "@/components/ui/use-toast";
 import { ApiError } from "@/utils";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
 import { useLocation } from "wouter";
 
 const DeletServerModal = () => {
