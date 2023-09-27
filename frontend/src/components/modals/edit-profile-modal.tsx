@@ -85,7 +85,6 @@ const EditProfileModal = () => {
 
   const onSubmit = async (values: EditProfileFormValues) => {
     try {
-      console.log(values);
       if (!values.username && (!values.image || values.image.length === 0)) return;
       const editProfileFormData = new FormData();
       if (values.username) {

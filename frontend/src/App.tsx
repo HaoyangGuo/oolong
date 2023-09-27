@@ -40,9 +40,6 @@ const App = () => {
   });
 
   if (isAuth0Loading || accessTokenIsFetching) {
-    console.log(isAuth0Loading, accessTokenIsFetching)
-    console.log("isAuthenticated", isAuthenticated)
-    console.log("location", location)
     return <LoadingScreen />;
   }
 
