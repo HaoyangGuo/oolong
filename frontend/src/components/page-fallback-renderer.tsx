@@ -1,12 +1,17 @@
 import { ApiError } from "@/utils";
 import { Redirect } from "wouter";
-import { Toast } from "@radix-ui/react-toast";
+import { toast } from "./ui/use-toast";
 
 const PageFallBackRender = ({ error }: { error: Error }) => {
   console.error(error);
   if (error instanceof ApiError) {
     switch (error.status) {
       case 400:
+        toast({
+          title: "Bad Request",
+          description: error.message || "Please check your input and try again",
+        });
+        return <Redirect to="/initial" />;
       case 401:
         return <Redirect to="/initial" />;
       case 404:
