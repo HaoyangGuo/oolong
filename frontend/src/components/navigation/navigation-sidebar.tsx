@@ -9,7 +9,6 @@ import { useQueryClient } from "@tanstack/react-query";
 import { UserAvatar } from "../user-avatar";
 import { useModalStore } from "@/hooks/use-modal-store";
 import { OolongLogo } from "../oolong-logo";
-import { ActionTooltip } from "../action-tooltip";
 
 const NavigationSidebar = ({ servers }: { servers: ServerWithChannels[] }) => {
   const { onOpen } = useModalStore();
