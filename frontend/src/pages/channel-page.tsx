@@ -21,7 +21,7 @@ export const ChannelPage = () => {
         params!.channelId
       );
     },
-    enabled: !params?.serverId && !!accessToken,
+    enabled: !!params?.serverId && !!accessToken,
     useErrorBoundary: true,
   });
 
