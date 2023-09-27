@@ -2,7 +2,13 @@ import { ApiError } from "@/utils";
 import { Redirect } from "wouter";
 import { toast } from "./ui/use-toast";
 
-const PageFallBackRender = ({ error }: { error: Error }) => {
+const PageFallBackRender = ({
+  error,
+  resetErrorBoundary,
+}: {
+  error: Error;
+  resetErrorBoundary: () => void;
+}) => {
   console.error(error);
   if (error instanceof ApiError) {
     switch (error.status) {
@@ -11,6 +17,7 @@ const PageFallBackRender = ({ error }: { error: Error }) => {
           title: "Bad Request",
           description: error.message || "Please check your input and try again",
         });
+        resetErrorBoundary();
         return <Redirect to="/initial" />;
       case 401:
         return <Redirect to="/initial" />;
@@ -21,7 +28,9 @@ const PageFallBackRender = ({ error }: { error: Error }) => {
         return <Redirect to="/" />;
     }
   } else {
-    return <div>We encountered an unexpected issue. Please try again later.</div>;
+    return (
+      <div>We encountered an unexpected issue. Please try again later.</div>
+    );
   }
 };
 
