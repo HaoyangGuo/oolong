@@ -23,8 +23,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       authorizationParams={{
         redirect_uri: window.location.origin + "/initial",
         audience: "https://oolong-api.dhguo.dev",
-        scope: "openid profile email",
       }}
+      cacheLocation="localstorage"
     >
       <QueryClientProvider client={queryClient}>
         <ReactQueryDevtools initialIsOpen={false} position="top-right" />
