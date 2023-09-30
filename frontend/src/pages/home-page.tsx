@@ -18,7 +18,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="h-full overflow-x-hidden">
+    <div className="h-full overflow-x-hidden text-zinc-600 dark:text-zinc-300">
       <header className="dark:bg-[#2B2D31] bg-[#F2F3F5] h-screen md:h-[400px]  flex items-center justify-center ">
         <div className="relative w-full">
           <div className="relative w-full max-w-lg mx-auto">
@@ -29,7 +29,7 @@ const HomePage = () => {
           <div className="my-8 relative gap-y-6 flex flex-col">
             <div className=" w-full flex flex-col md:flex-row items-center justify-center gap-6">
               <OolongLogo width={100} />
-              <div className="text-2xl md:text-4xl text-center md:text-start">
+              <div className="text-2xl md:text-4xl text-center md:text-start font-bold">
                 Sip back and relax 😎! <br />
                 Enjoy some oolong tea with your friends ❤️.
               </div>
