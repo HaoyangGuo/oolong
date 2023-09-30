@@ -1,5 +1,4 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import { ModeToggle } from "@/components/mode-toggle";
 import { LoadingScreen } from "@/components/loading-screen";
 import { OolongLogo } from "@/components/oolong-logo";
 import { Button } from "@/components/ui/button";
@@ -50,9 +49,12 @@ const HomePage = () => {
       <ul>
         <li className="">
           <div className="flex mx-auto flex-col md:flex-row justify-center items-center py-8 md:gap-x-10">
-            <div className="text-2xl md:text-3xl md:w-[30rem] text-center md:text-start">
-              Brew your own space!
-              <p className="text-indigo-600 dark:text-indigo-400"> Create and customize your servers.</p>
+            <div className="text-2xl md:text-3xl md:w-[30rem] text-center md:text-start ">
+              <p className="font-bold">Brew your own space!</p>
+              <p className="text-indigo-600 dark:text-indigo-400">
+                {" "}
+                Create and customize your servers.
+              </p>
               <p className="text-base md:text-lg mt-2 text-zinc-500 dark:text-zinc-400 ">
                 Whether it's a tea party or a gaming session, make it yours.
               </p>
@@ -76,8 +78,11 @@ const HomePage = () => {
               />
             </div>
             <div className="text-2xl md:text-3xl md:w-[30rem] text-center md:text-start">
-              Spill the tea in Groupchat channels!
-              <p className="text-indigo-600 dark:text-indigo-400"> Text your friends, share the latest.</p>
+              <p className="font-bold">Spill the tea in Groupchat channels!</p>
+              <p className="text-indigo-600 dark:text-indigo-400">
+                {" "}
+                Text your friends, share the latest.
+              </p>
               <p className="text-base md:text-lg mt-2 text-zinc-500 dark:text-zinc-400">
                 From memes to deep conversations, keep the chat brewing.
               </p>
@@ -87,8 +92,11 @@ const HomePage = () => {
         <li className="">
           <div className="flex mx-auto flex-col md:flex-row justify-center items-center py-8 md:gap-x-10">
             <div className="text-2xl md:text-3xl md:w-[30rem] text-center md:text-start">
-              Slide into the DMs!
-              <p className="text-indigo-600 dark:text-indigo-400"> Connect from any server.</p>
+              <p className="font-bold">Slide into the DMs!</p>
+              <p className="text-indigo-600 dark:text-indigo-400">
+                {" "}
+                Connect from any server.
+              </p>
               <p className="text-base md:text-lg mt-2 text-zinc-500 dark:text-zinc-400">
                 Private chats for those steeped conversations.
               </p>
@@ -112,8 +120,11 @@ const HomePage = () => {
               />
             </div>
             <div className="text-2xl md:text-3xl md:w-[30rem] text-center md:text-start">
-              It's tea time on video!
-              <p className="text-indigo-600 dark:text-indigo-400"> Sip and see your friends.</p>
+              <p className="font-bold">It's tea time on video!</p>
+              <p className="text-indigo-600 dark:text-indigo-400">
+                {" "}
+                Sip and see your friends.
+              </p>
               <p className="text-base md:text-lg mt-2 text-zinc-500 dark:text-zinc-400">
                 Face-to-face, even when miles apart.
               </p>
