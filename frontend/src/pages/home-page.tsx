@@ -49,13 +49,13 @@ const HomePage = () => {
       <ul>
         <li className="">
           <div className="flex mx-auto flex-col md:flex-row justify-center items-center py-8 md:gap-x-10">
-            <div className="text-2xl md:text-3xl md:w-[30rem] text-center md:text-start ">
+            <div className="text-xl md:text-3xl md:w-[30rem] text-center md:text-start ">
               <p className="font-bold">Brew your own space!</p>
-              <p className="text-indigo-600 dark:text-indigo-400">
+              <p className="text-indigo-600 dark:text-indigo-400 text-lg">
                 {" "}
                 Create and customize your servers.
               </p>
-              <p className="text-base md:text-lg mt-2 text-zinc-500 dark:text-zinc-400 ">
+              <p className="text-sm md:text-lg mt-2 text-zinc-500 dark:text-zinc-400 ">
                 Whether it's a tea party or a gaming session, make it yours.
               </p>
             </div>
@@ -77,13 +77,13 @@ const HomePage = () => {
                 className="object-fit"
               />
             </div>
-            <div className="text-2xl md:text-3xl md:w-[30rem] text-center md:text-start">
+            <div className="text-xl md:text-3xl md:w-[30rem] text-center md:text-start">
               <p className="font-bold">Spill the tea in Groupchat channels!</p>
-              <p className="text-indigo-600 dark:text-indigo-400">
+              <p className="text-indigo-600 dark:text-indigo-400 text-lg">
                 {" "}
                 Text your friends, share the latest.
               </p>
-              <p className="text-base md:text-lg mt-2 text-zinc-500 dark:text-zinc-400">
+              <p className="text-sm md:text-lg mt-2 text-zinc-500 dark:text-zinc-400">
                 From memes to deep conversations, keep the chat brewing.
               </p>
             </div>
@@ -91,13 +91,13 @@ const HomePage = () => {
         </li>
         <li className="">
           <div className="flex mx-auto flex-col md:flex-row justify-center items-center py-8 md:gap-x-10">
-            <div className="text-2xl md:text-3xl md:w-[30rem] text-center md:text-start">
+            <div className="text-xl md:text-3xl md:w-[30rem] text-center md:text-start">
               <p className="font-bold">Slide into the DMs!</p>
-              <p className="text-indigo-600 dark:text-indigo-400">
+              <p className="text-indigo-600 dark:text-indigo-400 text-lg">
                 {" "}
                 Connect from any server.
               </p>
-              <p className="text-base md:text-lg mt-2 text-zinc-500 dark:text-zinc-400">
+              <p className="text-sm md:text-lg mt-2 text-zinc-500 dark:text-zinc-400">
                 Private chats for those steeped conversations.
               </p>
             </div>
@@ -119,13 +119,13 @@ const HomePage = () => {
                 className="object-fit"
               />
             </div>
-            <div className="text-2xl md:text-3xl md:w-[30rem] text-center md:text-start">
+            <div className="text-xl md:text-3xl md:w-[30rem] text-center md:text-start">
               <p className="font-bold">It's tea time on video!</p>
-              <p className="text-indigo-600 dark:text-indigo-400">
+              <p className="text-indigo-600 dark:text-indigo-400 text-lg">
                 {" "}
                 Sip and see your friends.
               </p>
-              <p className="text-base md:text-lg mt-2 text-zinc-500 dark:text-zinc-400">
+              <p className="text-sm md:text-lg mt-2 text-zinc-500 dark:text-zinc-400">
                 Face-to-face, even when miles apart.
               </p>
             </div>
