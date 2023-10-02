@@ -213,10 +213,19 @@ export class ServerService {
       where: {
         inviteCode: inviteCode,
       },
+      include: {
+        members: true,
+      }
     });
 
     if (!existingServer) {
       throw new NotFoundException("Server doesn't exist");
+    }
+
+    if (
+      existingServer.members.find((member) => member.profileId === profile.id)
+    ) {
+      throw new BadRequestException("You're already a member of this server");
     }
 
     const server = await this.prisma.server.update({
