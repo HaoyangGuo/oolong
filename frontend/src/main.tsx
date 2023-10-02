@@ -27,7 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       cacheLocation="localstorage"
     >
       <QueryClientProvider client={queryClient}>
-        <ReactQueryDevtools initialIsOpen={false} position="top-left" />
+        <ReactQueryDevtools initialIsOpen={false} position="top-right" />
         <ThemeProvider defaultTheme="dark" storageKey="oolong-theme">
           <App />
         </ThemeProvider>

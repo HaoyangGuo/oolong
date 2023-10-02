@@ -138,7 +138,7 @@ const HomePage = () => {
         </ul>
       </div>
       <a
-        className="absolute top-5 right-10 flex gap-1 p-2 hover:underline hover:cursor-pointer text-lg"
+        className="absolute top-5 left-5 flex gap-1 py-2 px-4 hover:cursor-pointer text-lg bg-black text-white rounded-full items-center hover:underline"
         href="https://github.com/HaoyangGuo/oolong"
       >
         <Github className="h-6 w-6" />
