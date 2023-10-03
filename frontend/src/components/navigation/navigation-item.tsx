@@ -15,7 +15,7 @@ const NavigationItem = ({
   name,
   channelId,
 }: NavigationItemProps) => {
-  const [_match, params] = useRoute("/servers/:id");
+  const [_match, params] = useRoute("/servers/:id/:any*");
   const [_location, setLocation] = useLocation();
 
   const handleClick = () => {
