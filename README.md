@@ -1,5 +1,5 @@
-# Live Demo 
-## [oolong.dhguo.dev](https://oolong.dhguo.dev)
+
+# [oolong.dhguo.dev](https://oolong.dhguo.dev)
 
 # Oolong
 
@@ -9,8 +9,7 @@ Oolong is a dynamic platform designed to foster community engagement through rea
 
 ## Table of Contents
 
-- [Live Demo](#live-demo)
-  - [oolong.dhguo.dev](#oolongdhguodev)
+- [oolong.dhguo.dev](#oolongdhguodev)
 - [Oolong](#oolong)
   - [Table of Contents](#table-of-contents)
   - [Screenshots](#screenshots)
